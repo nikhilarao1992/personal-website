@@ -1,0 +1,329 @@
+body {
+    width:100%;
+    background-color:dimgray;
+}
+
+.container-fluid {
+    padding:0;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-left:0;
+    padding-right:0;
+}
+
+/*LOADER*/
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display:none;  }
+.js #loader { display:block; position:absolute; left:100px; top:0; }
+.loader {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:9999;
+	background:url(Images/Loader/loader.gif) center no-repeat #fff;
+}
+
+/*HERO*/
+.hero {
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Images/Hero/photo.jpg);
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero img {
+    display:block;
+    width:20%;
+    margin:0 auto;
+    border:5px solid ghostwhite;
+}
+
+.hero h1 {
+    text-align:center;
+    font-family:'Roboto', sans-serif;
+    color:white;
+    font-weight:1000;
+    font-size:70px;
+    letter-spacing:0.1em;
+    margin-top:50px;
+}
+
+.hero hr {
+    color:dimgray;
+    width:60%;
+}
+
+.hero p {
+    text-align:center;
+    font-family:'Catamaran', sans-serif;
+    color:white;
+    font-weight:500;
+    font-size:25px;
+}
+
+.hero p .down-arrow {
+    height:10%;
+}
+
+/*ABOUT ME*/
+.about-me {
+    background-color:whitesmoke;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.about-me h1 {
+    font-size:30px;
+    margin-top:30px;
+    font-family:'Open Sans', sans-serif;
+    color:dimgrey;
+    text-align:left;
+}
+
+.about-me hr {
+    width:38%;
+    background-color:lightblue;
+    height:3px;
+    margin-top:-5px;
+}
+
+.about-me p {
+    text-align:left;
+    color:dimgrey;
+    font-size:15px;
+    margin-top:30px;
+    font-family:'Open Sans', sans-serif;
+}
+
+.about-me .name-about {
+    color:cornflowerblue;
+    font-weight:bold;
+    font-size:15px;
+    font-family:'Open Sans', sans-serif;
+}
+
+/*.about-me img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+}*/
+
+.about-me h3 {
+    text-align:center;
+    color:cornflowerblue;
+    font-size:17px;
+    font-family:'Roboto', sans-serif;
+    margin-top:50px;
+}
+
+.about-me .current-work {
+    text-align:center;
+}
+
+.about-me img {
+    text-align:center;
+    width:50%;
+}
+
+.about-me .previous-work1 {
+    text-align:center;
+}
+
+.about-me .previous {
+    width:20%;
+}
+
+/*SKILLS*/
+.skills {
+    background-color:whitesmoke;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.skills h1 {
+    font-size:30px;
+    margin-top:30px;
+    font-family:'Open Sans', sans-serif;
+    color:dimgrey;
+    text-align:left;
+}
+
+.skills hr {
+    width:36%;
+    background-color:lightblue;
+    height:3px;
+    margin-top:-5px;
+}
+
+.skills .col-md-4 p {
+    color:dimgray;
+    font-family:'Open Sans', sans-serif;
+    margin-top:-10px;
+    font-size:12px;
+    width:137px;
+}
+
+.skills .col-md-8 .core {
+    font-size:16px;
+    font-weight:bold;
+    border:5px solid black;
+    background:black;
+    color:white;
+    text-align:center;
+}
+
+.skills .col-md-8 .viz {
+    font-size:16px;
+    font-weight:bold;
+    border:5px solid black;
+    background:black;
+    color:white;
+    text-align:center;
+}
+
+.skills .col-md-8 .web {
+    font-size:16px;
+    font-weight:bold;
+    border:5px solid black;
+    background:black;
+    color:white;
+    text-align:center;
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+    width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/*FOOTER*/
+.footer {
+    /*background-image:url(Images/Footer/footerbackground.png);*/
+    background-color:darkslategrey;
+    padding-bottom:50px;
+}
+
+.footer .connect {
+    padding-top:40px;
+    text-align:center;
+    color:white;
+    font-family:'Roboto', sans-serif;
+    font-size:40px;
+    font-weight:1000;
+}
+
+.footer .connect-p {
+    padding-top:20px;
+    text-align:center;
+    color:white;
+    font-family:'Asap', sans-serif;
+    font-size:15px;
+}
+
+.footer .col-md-4 {
+    padding-top:70px;
+    text-align:left;
+}
+
+.footer h1 {
+    font-family:'Roboto', sans-serif;
+    color:white;
+    font-size:40px;
+    font-weight:600;
+    letter-spacing:0.1em;
+}
+
+.footer p {
+    font-family:'Roboto', sans-serif;
+    font-size:12px;
+    color:#ADD8E6;
+}
+
+.footer .foot-span {
+    color:white;
+    font-family:'Roboto', sans-serif;
+    position:relative;
+    left:2%;
+    font-size:15px;
+}
+
+.footer a {
+    color:white;
+}
+
