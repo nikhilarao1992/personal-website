@@ -1,2 +1,2 @@
 # personal-website
-Nikhil Rao's Personal Website
+Nikhil Rao's Personal Website written in HTML, CSS, and JS.
